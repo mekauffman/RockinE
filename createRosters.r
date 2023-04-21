@@ -192,8 +192,3 @@ rmarkdown::render(RMDFile, output_file = paste0('Rosters_',
 return(out)
 
 }
-
-tmp = createRosters(inputFilePath = 'c:/users/acer/downloads/',
-              sessionStartDate = '2022-04-16',
-              outputFilePath = 'c:/users/acer/downloads/')
-

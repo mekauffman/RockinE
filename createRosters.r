@@ -1,6 +1,6 @@
 createRosters = function(inputFilePath = readline('Example: c:/users/acer/downloads/'),
                          sessionStartDate = readline('Example: "2023-04-16"'),
-                         RMDFile = 'c:/users/acer/downloads/testRosterhtml.Rmd',
+                         RMDFile = 'RosterToHTML.Rmd',
                          outputFilePath = readline('Example: c:/users/acer/downloads/')){
 
   require(dplyr)

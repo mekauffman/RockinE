@@ -1,0 +1,132 @@
+---
+output: 
+  html_document
+---
+
+```{r setup, include=FALSE, echo = FALSE}
+require(dplyr)
+```
+
+```{r SUNDAY,echo=FALSE,warning=FALSE,message=FALSE,results='asis'}
+  tmp = subset(out, Day == 'Sunday')
+  lapply(sort(unique(tmp$Order)), function(i) {
+  cat(unique(tmp$Detail[tmp$Order == i])) -> suppress
+  df = out[out$Order == i,
+                   c('Client','DogDetails','Payment','Fecal','Rabies',
+                     'Waiver','1','2','3','4','5','6')]
+         row.names(df) = NULL 
+  print(knitr::kable(df) %>%
+            kableExtra::kable_styling(bootstrap_options = "bordered",
+                full_width = FALSE, ) %>%
+  kableExtra::row_spec(row = 0,
+           bold = TRUE)) -> suppress
+  }) -> suppress
+```
+
+\newpage
+
+```{r MONDAY,echo=FALSE,warning=FALSE,message=FALSE,results='asis'}
+  tmp = subset(out, Day == 'Monday')
+  lapply(sort(unique(tmp$Order)), function(i) {
+  cat(unique(tmp$Detail[tmp$Order == i])) -> suppress
+  df = out[out$Order == i,
+                   c('Client','DogDetails','Payment','Fecal','Rabies',
+                     'Waiver','1','2','3','4','5','6')]
+         row.names(df) = NULL 
+ print(knitr::kable(df) %>%
+            kableExtra::kable_styling(bootstrap_options = "bordered",
+                full_width = FALSE, ) %>%
+  kableExtra::row_spec(row = 0,
+           bold = TRUE)) -> suppress
+  }) -> suppress
+```
+
+\newpage
+
+```{r TUESDAY,echo=FALSE,warning=FALSE,message=FALSE,results='asis'}
+  tmp = subset(out, Day == 'Tuesday')
+  lapply(sort(unique(tmp$Order)), function(i) {
+  cat(unique(tmp$Detail[tmp$Order == i])) -> suppress
+  df = out[out$Order == i,
+                   c('Client','DogDetails','Payment','Fecal','Rabies',
+                     'Waiver','1','2','3','4','5','6')]
+         row.names(df) = NULL 
+ print(knitr::kable(df) %>%
+            kableExtra::kable_styling(bootstrap_options = "bordered",
+                full_width = FALSE, ) %>%
+  kableExtra::row_spec(row = 0,
+           bold = TRUE)) -> suppress
+  }) -> suppress
+```
+
+\newpage
+
+```{r WEDNESDAY,echo=FALSE,warning=FALSE,message=FALSE,results='asis'}
+  tmp = subset(out, Day == 'Wednesday')
+  lapply(sort(unique(tmp$Order)), function(i) {
+  cat(unique(tmp$Detail[tmp$Order == i])) -> suppress
+  df = out[out$Order == i,
+                   c('Client','DogDetails','Payment','Fecal','Rabies',
+                     'Waiver','1','2','3','4','5','6')]
+         row.names(df) = NULL 
+ print(knitr::kable(df) %>%
+            kableExtra::kable_styling(bootstrap_options = "bordered",
+                full_width = FALSE, ) %>%
+  kableExtra::row_spec(row = 0,
+           bold = TRUE)) -> suppress
+  }) -> suppress
+```
+
+\newpage
+
+```{r THURSDAY,echo=FALSE,warning=FALSE,message=FALSE,results='asis'}
+  tmp = subset(out, Day == 'Thursday')
+  lapply(sort(unique(tmp$Order)), function(i) {
+  cat(unique(tmp$Detail[tmp$Order == i])) -> suppress
+  df = out[out$Order == i,
+                   c('Client','DogDetails','Payment','Fecal','Rabies',
+                     'Waiver','1','2','3','4','5','6')]
+         row.names(df) = NULL 
+ print(knitr::kable(df) %>%
+            kableExtra::kable_styling(bootstrap_options = "bordered",
+                full_width = FALSE, ) %>%
+  kableExtra::row_spec(row = 0,
+           bold = TRUE)) -> suppress
+  }) -> suppress
+```
+
+\newpage
+
+```{r FRIDAY,echo=FALSE,warning=FALSE,message=FALSE,results='asis'}
+  tmp = subset(out, Day == 'Friday')
+  lapply(sort(unique(tmp$Order)), function(i) {
+  cat(unique(tmp$Detail[tmp$Order == i])) -> suppress
+  df = out[out$Order == i,
+                   c('Client','DogDetails','Payment','Fecal','Rabies',
+                     'Waiver','1','2','3','4','5','6')]
+         row.names(df) = NULL 
+ print(knitr::kable(df) %>%
+            kableExtra::kable_styling(bootstrap_options = "bordered",
+                full_width = FALSE, ) %>%
+  kableExtra::row_spec(row = 0,
+           bold = TRUE)) -> suppress
+  }) -> suppress
+```
+
+\newpage
+
+```{r SATURDAY,echo=FALSE,warning=FALSE,message=FALSE,results='asis'}
+  tmp = subset(out, Day == 'Saturday')
+  lapply(sort(unique(tmp$Order)), function(i) {
+  cat(unique(tmp$Detail[tmp$Order == i])) -> suppress
+  df = out[out$Order == i,
+                   c('Client','DogDetails','Payment','Fecal','Rabies',
+                     'Waiver','1','2','3','4','5','6')]
+         row.names(df) = NULL 
+ print(knitr::kable(df) %>%
+            kableExtra::kable_styling(bootstrap_options = "bordered",
+                full_width = FALSE, ) %>%
+  kableExtra::row_spec(row = 0,
+           bold = TRUE)) -> suppress
+  }) -> suppress
+```
